@@ -1,0 +1,75 @@
+/* undo the default margin */
+body {
+  margin: 0;
+  background-color: #1b1e22;
+  font-family: serif;
+  color: white;
+  
+}
+.section {
+  width: 800px;
+  /* height: 1000px; */
+  padding-top: 150px;
+  text-align: center;
+  
+}
+
+.section .title {
+  font-size: 50px;
+}
+
+input[type='file'] {
+  color: rgba(0, 0, 0, 0)
+}
+
+input::file-selector-button {
+  background-color: #1b1e22;
+  background-size: 200%;
+  border: 1px solid white;
+  color: #fff;
+  padding: 18px 30px;
+}
+
+.btn {
+  background-color: blue;
+  padding: 1rem 1.25rem;
+  border-radius: 0;
+}
+
+.btn:hover {
+  border: 1px solid white;
+}
+
+.btn-section {
+  padding: 30px 200px;
+}
+
+
+.img-container img, .main-image img{
+  border-radius: 30px;
+}
+
+.img-container img {
+  width: 500px;
+}
+
+.border-left-dashed {
+  padding: 0 60px;
+}
+
+.footer {
+  height: 150px;
+  background-color: #15191f7a;
+}
+
+.footer .logo i{
+  border-radius: 50%;
+}
+
+.result-image {
+  border: 2px solid white;
+  padding: 20px;
+  border-radius: 10px;
+  height: 700px;
+  width: 1200px;
+}

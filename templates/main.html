@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>3D-IMAGE OPTMIZATION</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="{{url_for('static',filename='styles.css')}}">
+  <!-- <link rel="stylesheet" href="styles.css"> -->
+</head>
+<body>
+  <div class="container-fluid">
+    <div class="container align-items-center section">
+      <div class="title text-light">3D IMAGE OPTMIZATION USING ADAM ALAGORITHM</div>
+      <div class="d-flex btn-section">
+        <form action = "http://localhost:5000/result" method = "POST" enctype = "multipart/form-data">
+         <centre><br><input type = "file" name = "file" /></centre>
+         <centre><input type = "submit" style="color:white;background-color:#0e64ed;height:60px; width:100px;border: none"/></centre>
+        <!-- <input type="file" id="myfile" class="w-100"> -->
+        <!-- <button class="btn w-50"><a href="/preview.html" class="text-decoration-none text-light">Upload</a></button> -->
+      </div>
+    </div>
+  </div>
+  
+  <div class="img-container container p-5 my-5">
+    <h2 class="text-center text-light">Project Details</h2>
+    <div class="d-flex">
+      <img src="{{url_for('static',filename='IMG1.jpeg')}}" alt="Deep Learning Image col-3">
+      <p class="text-left text-light border-left-dashed p-4">
+        Automated computing in medical field can be one of the greatest achievements of the Man Kind, 
+        our project is focused on liver segmentation from CT scan. We will be using a U-Net architecture to preform the liver segmentation.
+        Firstly, the CT scan (3D) is converted into a 2D and then into a NumPy file for ease of access and usage. Then these files are sent to 
+        the U-Net architecture to complete the liver segmentation process. The U-Net architecture is built using the convolution neural network.
+        It has one drawback i.e., is that its learning rate is slow, therefore, to increase the learning rate we are using the Adam algorithm to
+        make the learning path more inclined into horizontal direction therefore the learning rate will be fast. Then the output images are combined 
+        into forming a gif image that will be displayed as an output.
+      </p>
+    </div>
+  </div>
+  <div class="footer">
+     <div class="logo text-center">
+      <div class="pt-3"><a href="https://www.irjmets.com/paperdetail.php?paperId=d871897562f928adb635bb6b61fb00ed&title3D+IMAGE+OPTMIZATION+USING+ADAM+ALAGORITHM&authpr=J.S.Kanchana" target="_blank" class="text-decoration-none text-light"> Published Journal</a></div>
+      <i class="fa fa-graduation-cap bg-white text-dark p-2 m-2 mt-3" aria-hidden="true"></i>
+      <i class="fa fa-graduation-cap bg-white text-dark p-2 m-2 mt-3" aria-hidden="true"></i>
+      <i class="fa fa-graduation-cap bg-white text-dark p-2 m-2 mt-3" aria-hidden="true"></i>
+     </div>
+     <div class="info-section d-flex contaier justify-content-center">
+      <div class="m-2 text-light">J.S.Kanchana</div>
+        <div class="m-2 text-light">Venkatesh T</div>
+        <div class="m-2 text-light">Vinod T.H</div>
+     </div>
+  </div>
+  
+</body>
+</html>
